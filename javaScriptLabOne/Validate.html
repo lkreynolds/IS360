@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html xlmns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<script type="text/javascript">
+		function btnValidate_Click(){
+			var tName;
+			var tErr;
+			tName=document.getElementById("txtName");
+			tErr=document.getElementById("spnMessages");
+			if (tName.value == " "){
+				tErr.innerHTML= "Name must exist.";
+			}
+			else{
+				tErr.innerHTML="Name valid.";
+			}
+		}
+	</script>
+</head>
+<body>
+	<form id="firstform">
+		<fieldset>
+			<legend>
+				Validate Input
+			</legend>
+			Enter Name: <input type="text" id="txtName" />
+			<br />
+			<button id="btnValidate" type="button" onclick="btnValidate_Click()">Validate</button>
+			<br />
+			Messages: <span id="spnMessages"></span>
+		</fieldset>
+	</form>
+</body>
+</html>

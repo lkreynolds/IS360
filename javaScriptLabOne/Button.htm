@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html xlmns="http://www.w3.org/1999/xhtml">
+<head>
+	<title></title>
+	<!-- Click Event Handler -->
+	<script type="text/javascript">
+		function btnClickMe_Click(){
+		// declare Vars
+		var inputVar;
+		var spanVar;
+
+		// set vars
+		inputVar= document.getElementById("txtInput");
+		spanVar = document.getElementById("spnOutput");
+		spanVar.innerHTML = "You entered " + inputVar.value;
+	}
+
+
+	</script>
+</head>
+<body>
+	<h1>Button Test</h1>
+	<label for="txtInput">Enter your name:</label>
+	<input type="text" id="txtInput" />
+	<br />
+	<button type="button" id="btnClickMe" onclick="btnClickMe_Click()">Click me</button>
+	<br />
+	<span id="spnOutput"></span>
+
+
+
+
+
+
+</body>
+</html>
