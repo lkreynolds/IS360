@@ -1,0 +1,57 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery UI Accordion - Collapse content</title>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script>
+	  $(function() {
+	    $("#accordion").accordion({collapsible: true, active:false});
+	    $("#accordion").css("width", "400px");
+	  });
+
+	  $(function () {			
+        $("#btnChgW600").click(function () {
+            $("#accordion").css("width", "600px");
+            });
+       });
+	  $(function () {			
+        $("#btnChgW400").click(function () {
+            $("#accordion").css("width", "400px");
+            });
+       });
+
+  </script>
+</head>
+<body>
+	    <h3>Lindsay Reynolds</h3>
+    <a href="Employment.htm">Employment</a>
+    <hr/>
+ 	<button id="btnChgW600" type="button">Set Width to 600px</button>
+	<button id="btnChgW400" type="button">Set Width to 400px</button>
+<div id="accordion">
+
+  <h3>Section 1</h3>
+  <div>
+    <p>Debitis meliore id nam. Cum tale perpetua ex, et est tritani equidem indoctum, consul electram assentior te mea. Ei eum dicta mediocrem. Pri at meis maiestatis, id ius aperiri pertinacia. Cu ipsum phaedrum efficiantur sea, odio detracto molestiae ex pro. Et duo tantas nonumy, eos sonet apeirian no. Ad indoctum necessitatibus vix.
+	</p>
+  </div>
+  <h3>Section 2</h3>
+  <div>
+    <p>Debitis meliore id nam. Cum tale perpetua ex, et est tritani equidem indoctum, consul electram assentior te mea. Ei eum dicta mediocrem. Pri at meis maiestatis, id ius aperiri pertinacia. Cu ipsum phaedrum efficiantur sea, odio detracto molestiae ex pro. Et duo tantas nonumy, eos sonet apeirian no. Ad indoctum necessitatibus vix.
+	</p>
+  </div>
+  <h3>Section 3</h3>
+  <div>
+    <p>Debitis meliore id nam. Cum tale perpetua ex, et est tritani equidem indoctum, consul electram assentior te mea. Ei eum dicta mediocrem. Pri at meis maiestatis, id ius aperiri pertinacia. Cu ipsum phaedrum efficiantur sea, odio detracto molestiae ex pro. Et duo tantas nonumy, eos sonet apeirian no. Ad indoctum necessitatibus vix.
+	</p>
+  </div>
+
+</div>
+ 
+ 
+</body>
+</html>

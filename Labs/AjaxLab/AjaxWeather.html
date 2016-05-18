@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+
+        var req = new XMLHttpRequest();
+
+        // The base URL for yql.
+        var yql_base_uri = "http://query.yahooapis.com/v1/public/yql?q=";
+
+        function DoWorkGetQuoteWeatherSynchronous() {
+            yql_query = "select * from weather.forecast where woeid='" + txtLocation.value +
+                "' &env=store://datatables.org/alltableswithkeys"
+
+            req.open("GET", yql_base_uri + yql_query, false);
+            req.send();
+            DoWorkWeather();
+        }
+
+        function DoWorkWeather() {
+            var MyText = req.responseText;
+            var doc = req.responseXML;
+
+            txtOutput = document.getElementById("txtXMLAsText");
+            txtOutput.innerHTML = MyText;
+
+            var nodeList;
+            nodeList = doc.getElementsByTagName("condition");
+
+            var temp = nodeList[0].attributes["temp"].nodeValue;
+            var text = nodeList[0].attributes["text"].nodeValue;
+
+            var lblTemp = document.getElementById("lblTemp");
+            var lblText = document.getElementById("lblText");
+            lblTemp.innerHTML = temp;
+            lblText.innerHTML = text;
+        }
+    </script>
+</head>
+<body>
+
+    <label>Enter Location: </label>
+    <input type="text" id="txtLocation" />
+
+    <button id="btnGetWeatherAjaxSynchronous" type="button" value="Get Weather (Sync)"
+            onclick="DoWorkGetQuoteWeatherSynchronous()">
+        Get Weather (Sync)
+    </button>
+
+
+    <br />
+    <h2>Results</h2>
+    Temperature: <label style="width:400px" id="lblTemp"></label>
+    Condition: <label style="width:400px" id="lblText"></label>
+    <br />
+    <textarea style="width:600px" id="txtXMLAsText" rows="50" cols="200"></textarea>
+
+    <br />
+
+</body>
+</html>

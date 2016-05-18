@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>CompoundInterest</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./Stylesheet.css" type="text/css" />
+    <script src="CompoundInterest.js"></script>
+</head>
+<body>
+<a href="Index.htm">Home</a>
+<a href="Afford.htm">Afford</a>
+<a href="Payment.htm">Payment</a>
+
+<form id="firstform">
+		<fieldset>
+			<legend>Compound Interest</legend>
+			
+		<table>
+			<tr>
+				<td>Initial Investment Amount: </td>
+				<td><input type="number" id="inputPrincipal" /></td>
+			</tr>
+			<tr>
+				<td>Number of Periods: </td>
+				<td><input type="number" id="inputTerm" /></td>
+			</tr>
+			<tr>
+				<td>Interest Rate Per Period (%): </td>
+				<td><input type="number" id="inputRate" /></td>
+			</tr>
+
+		</table>
+		</fieldset>
+
+		<button id="btnCalculate" type="button" onclick="btnCalculate_Click()">Calculate</button>
+		<fieldset>
+			<legend>
+				Results
+			</legend>
+
+			<table>
+				<tr>
+					<td>Compound Interest: </td>
+					<td><output id="outputInterest"></output></td>
+			</table>
+
+		</fieldset>
+	</form>
+</body>
+</html>

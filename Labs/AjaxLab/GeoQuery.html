@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>IS 360 Ajax Lab Completed.</title>
+    <meta charset="utf-8" />
+
+    <script>
+
+        // We need to declare the XMLHttpRequest variable as a global variable so that
+        // it is available to both the synchronous and asynchronous HTTP request methods.
+        var req = new XMLHttpRequest();
+
+        // The base URL for yql.
+        var yql_base_uri = "http://query.yahooapis.com/v1/public/yql?q=";
+
+        function DoWorkGetDataAjaxSynchronous() {
+            txtLocation = document.getElementById("txtLocation");
+
+            //
+            // Create a YQL query to get a location based on a place.
+            // the query returns a structured XML document.
+            //
+            //yql_query = "SELECT * from geo.places WHERE text='SFO'";
+            // We are going to use the GET method so the querystring is passed in the URL.
+            // This is what YQL expected. Open and send the request (synchronous)
+            yql_query = "select * from geo.places where woeid='" + txtLocation.value +
+                "' &env=store://datatables.org/alltableswithkeys"
+
+            req.open("GET", yql_base_uri + yql_query, false);
+            req.send();
+
+            // We get here when the synchronous call finishes. req.send() will block until
+            // the request completes.
+            DoWork();
+        }
+
+        function DoWorkGetDataAjaxAsynchronous() {
+            yql_query = "select * from geo.places where woeid='" + txtLocation.value +
+                "' &env=store://datatables.org/alltableswithkeys";
+            req.open("GET", yql_base_uri + yql_query, true);
+            req.onreadystatechange = function () {
+                if (req.readyState == 4 && req.status == 200) {
+                    DoWork();
+                }
+            }
+            req.send();
+        }
+
+        function DoWork() {
+
+            var MyText = req.responseText;
+            var doc = req.responseXML;
+
+            txtOutput = document.getElementById("txtXMLAsText");
+            txtOutput.innerHTML = MyText;
+
+            var nodeList;
+            nodeList = doc.getElementsByTagName("centroid");
+
+            // <centroid>
+            //    <latitude>37.62207</latitude>
+            //    <longitude>-122.383659</longitude>
+
+            var latitude = nodeList[0].childNodes[0].innerHTML;
+            var longitude = nodeList[0].childNodes[1].innerHTML;
+
+            var lblLatitude = document.getElementById("lblLatitude");
+            var lblLongitude = document.getElementById("lblLongitude");
+            lblLatitude.innerHTML = latitude;
+            lblLongitude.innerHTML = longitude;
+        }
+    </script>
+
+</head>
+
+<body>
+
+    <label>Enter Location: </label>
+    <input type="text" id="txtLocation" />
+
+    <button id="btnGetDataAjaxSynchronous" type="button" value="Get Location (Sync)"
+            onclick="DoWorkGetDataAjaxSynchronous()">
+        Get Location (Sync)
+    </button>
+    <button id="btnGetDataAjaxAsynchronous" type="button" value="Get Location (Async)"
+            onclick="DoWorkGetDataAjaxAsynchronous()">
+        Get Location (Async)
+    </button>
+
+    <br />
+    <h2>Results</h2>
+    Longitude: <label style="width:400px" id="lblLongitude"></label>
+    Latitude: <label style="width:400px" id="lblLatitude"></label>
+    <br />
+    <textarea style="width:600px" id="txtXMLAsText" rows="50" cols="200"></textarea>
+
+    <br />
+</body>
+
+</html>
+<!-- 100--> 

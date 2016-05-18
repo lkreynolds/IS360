@@ -1,0 +1,10 @@
+#amortizationTable{
+   border: 1px solid black;
+   border-collapse: collapse;
+}
+
+#cell {
+   border: 1px solid black;
+   border-collapse: collapse;
+   width:16.66%;
+}

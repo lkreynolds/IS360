@@ -1,0 +1,44 @@
+html{
+	border: 3px solid black;
+}
+body{
+
+	height:11in;
+	width:8.5in;
+	margin-bottom: 1in; 
+	margin-top: 1in;
+	margin-left: .75in;
+	margin-right: .625in;
+	padding: 8px;
+	border: 3px solid black;
+}
+
+p{
+	font: Franklin Gothic Medium, Arial Narrow, Arial, sans-serif;
+	font-size: 1.2em;
+	text-align: justify;
+	text-indent: .5in;
+}
+
+
+h1{
+color:DarkBlue;
+font-size: 200%: 
+}
+
+h2{
+color:DarkGreen;
+font-size: 160%;
+}
+
+p.pIndent{
+margin-left: .25in;
+margin-right: .25in;
+text-indent: 0;
+font-style: italic; 
+}
+
+p > code{
+
+	color:DarkCyan;
+}

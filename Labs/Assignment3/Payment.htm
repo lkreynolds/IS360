@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Payment</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./Stylesheet.css" type="text/css" />
+    <script src="Payment.js"></script>
+</head>
+<body>
+<a href="Index.htm">Home</a>
+<a href="Afford.htm">Afford</a>
+<a href="CompoundInterest.htm">CompoundInterest</a>
+
+<form id="firstform">
+		<fieldset>
+			<legend>Input</legend>
+			
+		<table>
+			<tr>
+				<td>Initial Loan Amount: </td>
+				<td><input type="number" id="inputPrincipal" /></td>
+			</tr>
+			<tr>
+				<td>Number of Periods (Years): </td>
+				<td><input type="number" id="inputTerm" /></td>
+			</tr>
+			<tr>
+				<td>Interest Rate (Years): </td>
+				<td><input type="number" id="inputRate" /></td>
+			</tr>
+
+		</table>
+		</fieldset>
+
+		<button id="btnCalculate" type="button" onclick="btnCalculate_Click()">Calculate</button>
+		<fieldset>
+			<legend>
+				Output
+			</legend>
+
+			<table>
+				<tr>
+					<td>Payment Amount: </td>
+					<td><output id="outputPayment"></output></td>
+			</table>
+
+		</fieldset>
+	</form>
+
+
+</body>
+</html>

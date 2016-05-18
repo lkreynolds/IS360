@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Afford</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./Stylesheet.css" type="text/css" />
+
+	<script src="Afford.js"></script>
+</head>
+<body>
+<a href="Index.htm">Home</a>
+<a href="CompoundInterest.htm">CompoundInterest</a>
+<a href="Payment.htm">Payment</a>
+
+
+	<form id="firstform">
+		<fieldset>
+			<legend>Income</legend>
+			
+		<table>
+			<tr>
+				<td>Monthly Income: </td>
+				<td><input type="number" id="mnlyIncome" /></td>
+			</tr>
+			<tr>
+				<td>Alimony Income: </td>
+				<td><input type="number" id="almyIncome" /></td>
+			</tr>
+			<tr>
+				<td>Interest/Dividend Income: </td>
+				<td><input type="number" id="othrIncome" /></td>
+			</tr>
+
+		</table>
+		</fieldset>
+		<fieldset>
+			<legend>Expenses</legend>
+
+			<table>
+			<tr>
+				<td>Credit Card Payments: </td>
+				<td><input type="number" id="ccPmt" /> </td>
+			</tr>
+			<tr>
+				<td>Car Payments: </td>
+				<td><input type="number" id="carPmt" /></td>
+			</tr>
+			<tr>
+				<td>Other Recurring Payments: </td>
+				<td><input type="number" id="othrPmt" /></td>
+			</tr>
+			</table>
+		</fieldset>
+		<fieldset>
+			<legend>
+				Results
+			</legend>
+			<button id="btnCalculate" type="button" onclick="btnCalculate_Click()">Calculate</button>
+			<table>
+				<tr>
+					<td>Maximum Monthly Payment: </td>
+					<td><output id="maxPmt"></output></td>
+				</tr>
+				<tr>
+					<td>Percentage Used: </td>
+					<td><output id="prcntUsed"></output></td>
+				</tr>
+				<tr>
+					<td>Total Income: </td>
+					<td><output id="tlInc"></output></td>
+				</tr>
+				<tr>
+					<td>Total Expenses: </td>
+					<td><output id="tlExp"></output></td>
+				</tr>
+
+			</table>
+
+		</fieldset>
+	</form>
+</body>
+</html>

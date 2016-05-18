@@ -1,0 +1,13 @@
+﻿td:first-child{
+	text-align: right;
+	font-family: Arial;
+}
+input{
+	font-family: monospace;
+}
+
+output{
+	font-family: monospace;
+	font-weight: bold;
+	color: DarkBlue;
+}

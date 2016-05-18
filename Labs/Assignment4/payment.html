@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+
+<head>
+
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./Stylesheet.css" type="text/css" />
+    <title>Payment</title>
+
+<script src="Payment.js"></script>
+<script src="Amortization.js"></script>
+
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Input</legend>
+            
+        <table>
+            <tr>
+
+                <td>Initial Loan Amount: </td>
+                <td><input type="number" id="inputPrincipal" /></td>
+            </tr>
+            <tr>
+                <td>Interest Rate (Years): </td>
+                <td><input type="number" id="inputRate" />%</td>
+            </tr>
+            <tr>
+                <td>Number of Periods (Years): </td>
+                <td><input type="number" id="inputTerm" /></td>
+            </tr>
+
+
+        </table>
+        </fieldset>
+
+        <button id="btnCalculatePmt" type="button" onclick="btnCalculatePmt_Click()">Calculate Payment</button>
+        <button id="btnShowAmortization" type="button" onclick="btnShowAmortization_Click()">Show Amortization Table </button>
+        <fieldset>
+            <legend>
+                Output
+            </legend>
+
+            <table>
+                <tr>
+                    <td>Payment Amount: </td>
+                    <td>$<output id="outputPayment"></output></td>
+            </table>
+            <br />
+            <table id="amortizationTable" ></table>
+
+        </fieldset>
+    </form>
+
+
+</body>
+</html>

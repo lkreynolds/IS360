@@ -1,0 +1,45 @@
+
+
+tr{
+	text-align: right;
+
+}
+
+td:first-child{
+	text-align: left;
+}
+
+
+thead{
+	color: black;
+	background-color:LightBlue;
+	font-weight: bold;
+
+}
+
+table{
+	width: 700px;
+	border:3px solid black;
+}
+
+
+.negativeValues{
+	color:maroon;
+}
+
+tbody{
+	color:DarkBlue;
+
+}
+
+
+td{
+	width: 100px;
+	border: 1px solid black;
+	padding-right: 3px;
+}
+
+.neutral{
+	color:black;
+
+}

@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <title>Employment</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+    </script>
+    <script>
+    	
+		$(function () {
+     		$("thead tr, tfoot tr").css("background-color", "black");
+            $("thead tr, tfoot tr").css("color", "white");
+            $("tbody tr:odd").css("background-color", "lightgrey");
+            $("tbody tr:even").css("background-color", "lightgreen");
+		});
+		
+		$(function () {
+			
+            $("#btnHide").click(function () {
+            	$("tbody tr").slice(10).hide();
+            });
+        });
+		$(function () {
+			
+            $("#btnShow").click(function () {
+            	$("tbody tr").slice(0).show();
+            });
+        });
+
+    </script>
+</head>
+
+
+
+<body>
+    <h3>Lindsay Reynolds</h3>
+    <a href="Accordion.htm">Accordion</a>
+    <hr/>
+    <button id="btnHide">Hide</button> 
+    <button id="btnShow">Show All</button>
+
+<article><h1>Employment</h1>
+<table class="regular" cellspacing="0" cellpadding="0" xborder="1">
+	<caption><span class="tableTitle"><strong>Table 1.1 Employment by major occupational group, 2014 and projected 2024 (Numbers in thousands)</strong></span></caption>
+	<thead id="tableHeader" >
+		<tr>
+			<th rowspan="2" colspan="2" scope="col"><p  align="center"><strong>2014 National Employment Matrix title and code</strong></p></th>
+			<th rowspan="1" colspan="2" scope="col"><p align="center"><strong>Employment</strong></p></th>
+			<th rowspan="1" colspan="2" scope="col"><p align="center"><strong>Change, 2014&ndash;24</strong></p></th>
+			<th rowspan="2" colspan="1" scope="col"><p align="center"><strong>Median annual wage, 2015<span class="footnoteid"><a name="ep_table_101.f.1" /><a href="#1">(1)</a></span></strong></p></th>
+		</tr>
+
+		<tr>
+			<th scope="col"><p valign="top" align="center">2014</p></th>
+			<th scope="col"><p valign="top" align="center">2024</p></th>
+			<th scope="col"><p valign="top" align="center"><strong>Number</strong></p></th>
+			<th scope="col"><p valign="top" align="center"><strong>Percent</strong></p></th>
+		</tr>
+	</thead>
+<!-- ********************************* /HEAD ************************************** -->
+<!-- ********************************* BODY ************************************** -->
+	<tbody>
+		<tr>
+			<th id="ep_table_101.r.1" scope="row"><p class="sub0" valign="bottom" align="left">Total, all occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.00-0000" />00-0000</nobr></p></td>
+			<td><p class="datacell">150,539.9</p></td>
+			<td><p class="datacell">     160,328.8 </p></td>
+			<td><p class="datacell">9,788.9</p></td>
+			<td><p class="datacell">6.5</p></td>
+			<td><p class="datacell">$36,200</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.1" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Management occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.11-0000" />11-0000</nobr></p></td>
+			<td><p class="datacell">9,157.5</p></td>
+			<td><p class="datacell">        9,662.9 </p></td>
+			<td><p class="datacell">505.4</p></td>
+			<td><p class="datacell">5.5</p></td>
+			<td><p class="datacell">$98,560</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.2" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Business and financial operations occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.13-0000" />13-0000</nobr></p></td>
+			<td><p class="datacell">7,565.3</p></td>
+			<td><p class="datacell">        8,197.8 </p></td>
+			<td><p class="datacell">632.4</p></td>
+			<td><p class="datacell">8.4</p></td>
+			<td><p class="datacell">$65,710</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.3" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Computer and mathematical occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.15-0000" />15-0000</nobr></p></td>
+			<td><p class="datacell">4,068.3</p></td>
+			<td><p class="datacell">        4,599.7 </p></td>
+			<td><p class="datacell">531.4</p></td>
+			<td><p class="datacell">13.1</p></td>
+			<td><p class="datacell">$81,430</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.4" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Architecture and engineering occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.17-0000" />17-0000</nobr></p></td>
+			<td><p class="datacell">2,532.7</p></td>
+			<td><p class="datacell">        2,599.9 </p></td>
+			<td><p class="datacell">67.2</p></td>
+			<td><p class="datacell">2.7</p></td>
+			<td><p class="datacell">$76,870</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.5" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Life, physical, and social science occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.19-0000" />19-0000</nobr></p></td>
+			<td><p class="datacell">1,310.4</p></td>
+			<td><p class="datacell">        1,408.0 </p></td>
+			<td><p class="datacell">97.6</p></td>
+			<td><p class="datacell">7.4</p></td>
+			<td><p class="datacell">$62,160</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.6" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Community and social service occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.21-0000" />21-0000</nobr></p></td>
+			<td><p class="datacell">2,465.7</p></td>
+			<td><p class="datacell">        2,723.4 </p></td>
+			<td><p class="datacell">257.7</p></td>
+			<td><p class="datacell">10.5</p></td>
+			<td><p class="datacell">$42,010</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.7" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Legal occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.23-0000" />23-0000</nobr></p></td>
+			<td><p class="datacell">1,268.2</p></td>
+			<td><p class="datacell">        1,332.8 </p></td>
+			<td><p class="datacell">64.6</p></td>
+			<td><p class="datacell">5.1</p></td>
+			<td><p class="datacell">$78,170</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.8" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Education, training, and library occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.25-0000" />25-0000</nobr></p></td>
+			<td><p class="datacell">9,216.1</p></td>
+			<td><p class="datacell">        9,913.7 </p></td>
+			<td><p class="datacell">697.6</p></td>
+			<td><p class="datacell">7.6</p></td>
+			<td><p class="datacell">$47,220</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.9" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Arts, design, entertainment, sports, and media occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.27-0000" />27-0000</nobr></p></td>
+			<td><p class="datacell">2,624.2</p></td>
+			<td><p class="datacell">        2,731.7 </p></td>
+			<td><p class="datacell">107.5</p></td>
+			<td><p class="datacell">4.1</p></td>
+			<td><p class="datacell">$46,160</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.10" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Healthcare practitioners and technical occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.29-0000" />29-0000</nobr></p></td>
+			<td><p class="datacell">8,236.5</p></td>
+			<td><p class="datacell">        9,584.6 </p></td>
+			<td><p class="datacell">1,348.1</p></td>
+			<td><p class="datacell">16.4</p></td>
+			<td><p class="datacell">$62,610</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.11" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Healthcare support occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.31-0000" />31-0000</nobr></p></td>
+			<td><p class="datacell">4,238.0</p></td>
+			<td><p class="datacell">        5,212.2 </p></td>
+			<td><p class="datacell">974.2</p></td>
+			<td><p class="datacell">23.0</p></td>
+			<td><p class="datacell">$27,040</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.12" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Protective service occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.33-0000" />33-0000</nobr></p></td>
+			<td><p class="datacell">3,443.8</p></td>
+			<td><p class="datacell">        3,597.7 </p></td>
+			<td><p class="datacell">153.9</p></td>
+			<td><p class="datacell">4.5</p></td>
+			<td><p class="datacell">$37,730</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.13" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Food preparation and serving related occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.35-0000" />35-0000</nobr></p></td>
+			<td><p class="datacell">12,467.6</p></td>
+			<td><p class="datacell">      13,280.4 </p></td>
+			<td><p class="datacell">812.9</p></td>
+			<td><p class="datacell">6.5</p></td>
+			<td><p class="datacell">$19,580</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.14" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Building and grounds cleaning and maintenance occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.37-0000" />37-0000</nobr></p></td>
+			<td><p class="datacell">5,617.2</p></td>
+			<td><p class="datacell">        5,967.0 </p></td>
+			<td><p class="datacell">349.8</p></td>
+			<td><p class="datacell">6.2</p></td>
+			<td><p class="datacell">$23,860</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.15" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Personal care and service occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.39-0000" />39-0000</nobr></p></td>
+			<td><p class="datacell">6,006.1</p></td>
+			<td><p class="datacell">        6,798.2 </p></td>
+			<td><p class="datacell">792.1</p></td>
+			<td><p class="datacell">13.2</p></td>
+			<td><p class="datacell">$21,850</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.16" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Sales and related occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.41-0000" />41-0000</nobr></p></td>
+			<td><p class="datacell">15,423.1</p></td>
+			<td><p class="datacell">      16,201.1 </p></td>
+			<td><p class="datacell">778.0</p></td>
+			<td><p class="datacell">5.0</p></td>
+			<td><p class="datacell">$25,660</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.17" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Office and administrative support occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.43-0000" />43-0000</nobr></p></td>
+			<td><p class="datacell">22,766.1</p></td>
+			<td><p class="datacell">      23,232.6 </p></td>
+			<td><p class="datacell">466.5</p></td>
+			<td><p class="datacell">2.0</p></td>
+			<td><p class="datacell">$33,200</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.18" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Farming, fishing, and forestry occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.45-0000" />45-0000</nobr></p></td>
+			<td><p class="datacell">972.1</p></td>
+			<td><p class="datacell">           914.9 </p></td>
+			<td><p class="datacell">-57.2</p></td>
+			<td><p class="datacell">-5.9</p></td>
+			<td><p class="datacell">$21,760</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.19" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Construction and extraction occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.47-0000" />47-0000</nobr></p></td>
+			<td><p class="datacell">6,501.7</p></td>
+			<td><p class="datacell">        7,160.7 </p></td>
+			<td><p class="datacell">659</p></td>
+			<td><p class="datacell">10.1</p></td>
+			<td><p class="datacell">$42,280</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.20" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Installation, maintenance, and repair occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.49-0000" />49-0000</nobr></p></td>
+			<td><p class="datacell">5,680.5</p></td>
+			<td><p class="datacell">        6,046.0 </p></td>
+			<td><p class="datacell">365.5</p></td>
+			<td><p class="datacell">6.4</p></td>
+			<td><p class="datacell">$42,790</p></td>
+		</tr>
+		<tr class="greenbar">
+			<th id="ep_table_101.r.1.21" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Production occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.51-0000" />51-0000</nobr></p></td>
+			<td><p class="datacell">9,230.3</p></td>
+			<td><p class="datacell">        8,948.3 </p></td>
+			<td><p class="datacell">-282.1</p></td>
+			<td><p class="datacell">-3.1</p></td>
+			<td><p class="datacell">$32,250</p></td>
+		</tr>
+		<tr>
+			<th id="ep_table_101.r.1.22" headers="ep_table_101.r.1" scope="row"><p class="sub1" valign="bottom" align="left">Transportation and material moving occupations</p></th>
+			<td><p valign="bottom" align="left"><nobr><span id="ep_table_101.53-0000" />53-0000</nobr></p></td>
+			<td><p class="datacell">9,748.5</p></td>
+			<td><p class="datacell">      10,215.3 </p></td>
+			<td><p class="datacell">466.8</p></td>
+			<td><p class="datacell">4.8</p></td>
+			<td><p class="datacell">$30,090</p></td>
+		</tr>
+	</tbody>
+<!-- ********************************* /BODY ************************************** -->
+<!-- ********************************* FOOTNOTES ********************************* -->
+	<tfoot>
+		<tr><td colspan="7">
+			<p class="footnotes"><span class="footnotestitle">Footnotes:</span><br />
+			&nbsp; <span class="footnote"><a name="1" /><a href="#ep_table_101.f.1">(1)</a></span> Data are from the Occupational Employment Statistics program, U.S. Bureau of Labor Statistics.<br />
+			Source: Employment Projections program, U.S. Bureau of Labor Statistics<br />
+			</p>
+		</td></tr>
+	</tfoot>
+<!-- ********************************* /FOOTNOTES ********************************* -->
+</table>
+</article>
+</body>
+</html>
